@@ -38,6 +38,10 @@ address a {
   text-decoration: none;
 }
 
+#article-export {
+  overflow: hidden;
+}
+
 #article-export label {
   font-size: .8em;
   font-style: italic;
@@ -68,11 +72,11 @@ label {
 }
 
 input {
-  width: 100%;
-  margin: .5em 0;
   border: 1px solid #ccc;
   border-width: 0 0 1px 0;
   border-radius: 0;
+  margin: .5em 0;
+  width: 100%;
 }
 
 input[type="checkbox"] {
@@ -97,15 +101,16 @@ input:valid, textarea:valid {
   border-color: #89CB8E;
 }
 
-#article-export {
-  overflow: hidden;
-}
-
 #json-output {
   opacity: .75;
   width: 65%;
   float: right;
 }
+
+#article-json {
+  color: gray;
+}
+
 /* === ICON FONT === */
 
 .icon-menu {
