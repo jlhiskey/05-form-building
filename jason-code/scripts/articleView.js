@@ -113,16 +113,16 @@ articleView.create = () => {
   // : Use our interface to the Handblebars template to put this new article into the DOM:
   $('#articles').html(post.toHtml());
 
-  // TODO: Activate the highlighting of any code blocks; look at the documentation for hljs to see how to do this by placing a callback function in the .each():
+  // : Activate the highlighting of any code blocks; look at the documentation for hljs to see how to do this by placing a callback function in the .each():
   $('pre code').each();
 
-  // TODO: Show our export field, and export the new article as JSON, so it's ready to copy/paste into blogArticles.js:
+  // : Show our export field, and export the new article as JSON, so it's ready to copy/paste into blogArticles.js:
   $('#json-output').show();
   $('#article-json').val(JSON.stringify(article) + ',');
 };
 
-// COMMENT: Where is this function called? Why?
-// PUT YOUR RESPONSE HERE
+// : Where is this function called? Why?
+// This function is colled on the index page and handles the population of html content.
 articleView.initIndexPage = () => {
   articles.forEach(article => $('#articles').append(article.toHtml()));
   articleView.populateFilters();
